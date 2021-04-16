@@ -1,0 +1,621 @@
+body{
+	margin: 0;
+	padding:  0;
+	font-family: "San Francisco Text", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background-color: #f2f2f2;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+input:focus{
+	outline: none;
+}
+.mess{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	font-size: 50px;
+}
+/* header */
+.header{
+	width: 100%;
+	height: 104px;
+	display: flex;
+	position: relative;
+	background-color: white;
+}
+.header .logo{
+	width: 150px;
+	margin-left: 20px;
+}
+.logo img{
+	height: 60px;
+	margin-top: 25%;
+}
+.header ul{
+	display: flex;
+	height: 100%;
+}
+.header ul li a{
+	color: grey;
+	text-decoration: none;
+	font-size: 13px;
+}
+.header ul li{
+	margin: auto;
+	border: 1px solid #dddddd;
+	line-height: 35px;
+	height: 35px;
+	padding: 0 20px;
+	background-color: #fff;
+	margin-right: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.header ul li:hover{
+	background-color: #fe5a3a;
+	border-color: #fe5a3a;
+}
+.header ul li:hover a{
+	color: white;
+}
+.header ul li.active{
+	background-color: #fe5a3a;
+	border-color: #fe5a3a;
+}
+.header ul li.active a{
+	color: white;
+}
+.header .member{
+	position: absolute;
+	float: right;
+	display: flex;
+	right: 0;
+	height: 100%;
+}
+.register{
+	margin: auto;
+}
+.register:hover{
+	color: #fe5a3a;
+}
+.login{
+	color: white;
+	margin: auto;
+    box-shadow: 0 8px 4px rgba(204, 204, 204, 0.5);
+    margin-left: 20px;
+    margin-right: 30px;
+    border-radius: 20px;
+    background-color: #fe5a3a;
+}
+.login:hover{
+	background-color: #b13e28;
+	color: white;
+}
+/* navigation */
+.navi{
+	padding-top: 32px;
+	height: 380px;
+	width: 100%;
+	background: linear-gradient(to left, #dc1662, #fe5a3a);
+}
+.navi-box{
+	width: 1100px;
+	height: 315px;
+	margin: auto;
+	display: flex;
+}
+.menu .sp{ position: relative; }
+.menu .sp ul{position: absolute; margin-left: -300px; display: none;}
+.menu .sp li{
+padding: 0;
+display: inline-block;
+border: 0px solid red;
+height: 30px;
+}
+.menu .sp li a{color: black;}
+.menu .sp:hover ul{ display: block; }
+.menu .sp:hover ul li a{ color: grey; }
+.menu .sp ul li:hover a{ color: orange; }
+.menu .sp ul li:hover{background-color: white;}
+.navi-box .box1{
+	width: 365px;
+	height: 315px;
+	padding: 0 10px;
+}
+.navi-box .box1 .header{
+	height: 72px;
+}
+.bookingf, .shopf{
+	font-size: 17px;
+	color: grey;
+	text-align: center;
+	width: 100%;
+	margin-top: 3px;
+}
+.bookingf i, .shopf i{
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+.bookingf.active{
+	color: #fe5a3a;
+	border-bottom: 1.5px solid #fe5a3a;
+	border-radius: 0;
+}
+.shopf.active{
+	color: #fe5a3a;
+	border-bottom: 1.5px solid #fe5a3a;
+	border-radius: 0;
+}
+.pl, #searchF {
+	padding-left: 35px;
+	background-color: #f2f2f2;
+}
+#searchF{
+	width: 98%;
+	margin: auto;
+}
+.phone, .dichvu, .thoigian, .search, .hoten, .ghichu{
+	width: 98%;
+	margin: auto;
+	margin-top: 18px;
+	position: relative;
+}
+.datlichluon{
+	width: 98%;
+	margin-left: 3px;
+	margin-top: 18px;
+	background-color: #fe5a3a;
+	color: white;
+}
+.datlichluon:hover{
+	background-color: #b13e28;
+	color: white;
+}
+.content-booking i, .content-search i{
+	position: absolute;
+	top: 8px;
+	left: 9px;
+	color: #fe5a3a;
+	font-size: 20px;
+}
+.content-search{
+	display: none;
+}
+.navi-box .box2{
+	width: 735px;
+	height: 315px;
+	padding-left: 20px;
+	position: relative;
+}
+#slider{
+	border-radius: 3px;
+	overflow: hidden;
+}
+#naviCarousel img{
+	height: 315px;
+}
+/* main */
+.main{
+	width: 1100px;
+	margin: auto;
+}
+.sevices{
+	margin-top: 25px;
+	width: 100%;
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+	height: 142px;
+	justify-content: center;
+	display: flex;
+	padding-top: 10px;
+	background-color: white;
+}
+.sevices img{
+	width: 80px;
+}
+.sevices div{
+	margin: 0 60px;
+}
+/* hot hair */
+.hot-hair{
+	width: 100%;
+	margin-top: 30px;
+	background-color: #fafafa;	
+	border-radius: 5px;
+}
+
+#hotHairCarousel div div div{
+	margin: 10px;
+	background-color: white;
+	border-radius: 5px;
+	overflow: hidden;
+	width: 23%;
+	position: relative;
+}
+#prev-hair, #next-hair{
+	height: 35px; 
+	width: 35px; 
+	border-radius: 35px; 
+	margin:auto;
+	background-color: rgba(204, 204, 204, 0.3)
+}
+.hair-title{
+	margin-top: 10px;
+}
+.hair-prices{
+	background-color: #ffd5cd;
+	color: #fe5a3a;
+	width: 50%;
+	margin: auto;
+	border-radius: 10px;
+}
+.hair-img{
+	height: 307px;
+	overflow: hidden;
+}
+.book-now-text{
+	background-color: #fe5a3a;
+	padding: 3px 10px;
+	border-radius: 10px;
+	top: 140px;
+	left: 80px;
+	color: white;
+	position: absolute;
+	display: none;
+}
+.pophair{
+	cursor: pointer;
+}
+.pophair:hover .book-now{
+	display: block;
+}
+.pophair:hover .book-now-text{
+	display: block;
+}
+.book-now{
+	background-color: gray;
+	width: 100%;
+	height: 307px;
+	position: absolute;
+	top: 0; 
+	left: 0;
+	opacity: 0.3;
+	display: none;
+}
+.hot-hair-title{
+	color: #dc1662;
+	padding-top: 30px;
+	padding-left: 25px;
+	font-weight: bold;
+	text-align: left;
+	font-family: open sans;
+}
+.show-all{
+	float: right;
+	margin-right: 30px;
+	font-size: 16px;
+	background-color: #f2f2f2;
+	border-radius: 12px;
+	padding: 3px 7px;
+}
+.show-all a{
+	color: #00a79b;
+	font-size: 15px;
+	font-family: arial;
+	text-decoration: none;
+}
+.show-all a:hover{
+	color: #fe5a3a;
+}
+/* hot sell */
+.hot-sell{
+	width: 100%;
+	margin-top: 30px;
+	background-color: #fafafa;	
+	border-radius: 5px;
+}
+
+#hotSellCarousel div div div{
+	margin: 10px;
+	overflow: hidden;
+	width: 18%;
+}
+#hotSellCarousel div div div:hover .sell-img{
+	box-shadow: 0 8px 4px rgba(204, 204, 204, 0.5);
+}
+#hotSellCarousel div div div:hover .sell-name{
+	color: #fe5a3a;
+}
+#prev-sell, #next-sell{
+	height: 35px; 
+	width: 35px; 
+	border-radius: 35px; 
+	margin:auto;
+	background-color: rgba(204, 204, 204, 0.3)
+}
+.sell-title{
+	margin-top: 10px;
+}
+.sell-img img{
+	height: 250px;
+}
+.sell-img{
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.hot-sell-title{
+	color: black;
+	padding-top: 30px;
+	padding-left: 25px;
+	font-weight: bold;
+	text-align: left;
+	font-family: open sans;
+}
+.show-all{
+	float: right;
+	margin-right: 30px;
+	font-size: 16px;
+	background-color: #f2f2f2;
+	border-radius: 12px;
+	padding: 3px 7px;
+}
+.show-all a{
+	color: #00a79b;
+	font-size: 15px;
+	font-family: arial;
+	text-decoration: none;
+}
+.show-all a:hover{
+	color: #fe5a3a;
+}
+.sell-brand{
+	text-align: left;
+	color: #585979;
+	padding: 8px 0;
+}
+.sell-name{
+	text-align: left;
+}
+.sell-prices{
+	font-size: 16px;
+	padding: 3px 0;
+	text-align: left;
+	color: #fe5a3a;
+	font-weight: bold;
+}
+.price-before{
+	color: grey;
+}
+/* Hot new */
+
+/* tien ich */
+.comforts{
+	width: 100%;
+	background-color: white;
+	border-radius: 5px;
+	height: 300px;
+}
+.comforts .title{
+	padding-top: 15px;
+	padding-left: 25px;
+}
+.ti img{
+	width: 80px;
+}
+.tienich nav{
+	width: 20%;
+	float: left;
+	text-align: center;
+	margin: 10px 0;
+}
+/* footer */
+.footer{
+	margin: 30px 0 0 0;
+}
+.footer .content{
+	width: 1100px;
+	margin: auto;
+	color: #585979;
+	display: flex;
+}
+.footer1{
+	background-color: #e6e7e8;
+	padding: 20px 0;
+}
+.footer2{
+	background-color: #d1d3d4;
+	padding: 20px 0;
+}
+.footer1 .infor-title{
+	font-size: 20px;
+	font-weight: bold;
+}
+.footer1 ul{
+	margin-left: -37px;
+}
+.footer1 ul li{
+	margin-top: 5px;
+}
+.footer1 .contact{
+margin-left: 50px;
+}
+.footer1 .contact nav{
+	font-size: 16px;
+}
+.footer1 .contact i{
+	font-size: 30px;
+	padding: 5px;
+	margin-right: 10px;
+}
+.footer1 .contact a{
+	color: #585979;
+}
+.footer1 .contact i:hover{
+	color: #fe5a3a;
+}
+  /* Dropdown Button */
+.dropbtn {
+  background-color: #EDEDEC ;
+  color: #fe5a3a;
+  width: 48px;
+	height: 48px;
+  font-size: 16px;
+  border: none;
+  border-radius: 48px;
+	margin-top:25px;
+	position: relative;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  margin-left: -50px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.quantum{
+	position: absolute;
+	top:2px;
+	right: -2px;;
+	color: white;
+	width: 17px;
+	height: 17px;
+	background-color: red;
+	border-radius: 15px;
+	font-size: 12px;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #fafafa;}
+/* style layout Catr*/
+.mainCart{
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+}
+.leftCart .title,.rightCart .title{
+	height: 60px;
+	padding: 12px 16px;
+}
+.leftCart{
+	background-color: white;
+	width: 70%;
+	border: 1px solid #f0f0f0;
+}
+.cartContent, .thongtindon{
+	padding: 16px;
+	border: 1px solid #f0f0f0;
+}
+.productBox{
+	margin-bottom: 16px;
+	padding: 16px;
+	border: 1px solid #f0f0f0;
+	display: flex;
+}
+.imgPro{
+	height: 150px;
+	width: 134px;
+	overflow: hidden;
+}
+.imgPro img{
+	height: 150px;
+}
+.productName{
+	font-size: 16px;
+}
+.productBrand{
+	margin-top: 5px;
+	color: grey;
+}
+.productPrice{
+	margin-top: 5px;
+	font-size: 16px;
+	color: #fe5a3a;
+}
+.productBeforePrice{
+	color: grey;
+}
+.productQuan{
+	width: 40px;
+	margin-top: 10px;
+}
+.xoaPro{
+	float: right;
+	border-radius: 10px;	
+}
+.productQuan input{
+	width: 50px;
+}
+.productDes{
+	padding-left: 16px;
+}
+.rightCart{
+	width: 30%;
+	background-color: white;
+	border: 1px solid #f0f0f0;
+}
+.thongtindon{
+	font-size: 16px;
+}
+.thongtindon div{
+	margin-bottom: 10px;
+}
+.miniCart{
+	padding: 10px;
+	display: flex;
+	border-top: 1px solid #f0f0f0;
+	width: 400px;
+}
+.rating-container .start-container {
+  width: 300px;
+}
+.rating-container .start-container a {
+  float: right;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding-left: 5px;
+  color: #ccc;
+}
+.rating-container .start-container a.one-start {
+  padding-left: 0px;
+}
+.rating-container .start-container a.selected,
+.rating-container .start-container a.selected ~ a {
+  color: #d9534f;
+}
+.rating-container .start-container:not(.view-mode) a.start:hover,
+.rating-container .start-container:not(.view-mode) a.start:hover ~ a {
+  color: #ec971f;
+}
+.rating-container .start-container.view-mode a:hover {
+  cursor: default;
+}

@@ -1,0 +1,292 @@
+.navi-sp{
+	width: 100%;
+	background: linear-gradient(to right, #9f1f63, #d91c5c);
+}
+.navi-content{
+	width: 1100px;
+	margin: auto;
+	display: flex;
+}
+.box-timkiem{
+	width: 91%;
+	height: 72px;
+	position: relative;
+	line-height: 72px;
+	padding-right: 15px;
+}
+.box-timkiem i{
+	position: absolute;
+	top: 27px;
+	left: 8px;
+	font-size: 17px;
+	color: #d91c5c;
+}
+.box-timkiem input{
+	width: 100%;
+	border-radius: 30px;
+	padding-left:30px;
+	border: none;
+	height: 40px;
+}
+.timkiem-sp input:focus{
+	outline: none;
+}
+.tim-sp{
+	color: white;	
+	margin: 0;
+	width: 99px;
+	height: 40px;
+	background-color: #fe5a3a;
+	border-radius: 30px;
+	margin-top: 16px;
+}
+.tim-sp:hover{
+	color: white;
+	background-color: #f54746;
+}
+/* css chon nhanh */
+.chon-nhanh{
+	width: 100%;
+	display: flex;
+	margin-top: 30px;
+}
+.cl{
+	width: 20%;
+	position: relative;
+}
+.cl nav{
+	background-color: white;
+	width: 90%;
+	height: 50px;
+	border-radius: 50px;	
+	display: flex;
+	padding: 0;
+}
+.cl nav:hover{
+	background-color: #fcdfed;
+}
+.cl nav p{
+	width: 130px;
+	font-size: 16px;
+	position: absolute;
+	top: 50%;
+	left: 50px;
+	transform: translateY(-50%);
+}
+.chon-nhanh nav img{
+	height:50px;
+}
+/* css sort */
+.mainSp{
+	display: flex;
+	margin-top: 25px;
+}
+.sort{
+	width: 300px;
+	height: auto;
+	background-color: white;
+	padding: 16px;
+	padding-top: 6px;
+	border: 1px solid #eeeeee;
+}
+.loai .title{
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.loai .item{
+	color: #4e1500;
+	float: left;
+	background-color: #e5e5e5;
+	padding: 2px 10px;
+	border-radius: 15px;
+	margin: 3px;
+}
+.loai .item:hover{
+	background-color: #fe5a3a;
+	color: white;
+}
+.loai .item.active{
+	background-color: #fe5a3a;
+	color: white;
+}
+.loai{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.sanpham{
+	width: 800px;
+	background-color: white;
+}
+.sanpham .titleSp{
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	height: 60px;
+}
+.sapxep{
+	float: right;
+	display: flex;
+	height: 60px;
+	line-height: 60px;
+}
+#sxSP{
+	border-color: grey;
+	border-radius: 3px;
+	height: 30px;
+	width: 90px;
+	margin: 12px 20px 0 5px;
+}
+.contentSP{
+	width: 100%;
+	padding: 20px;
+}
+.itemSP
+{
+	float: left;
+	width: 25%;
+	padding: 8px;
+	overflow: hidden;
+}
+.itemSP:hover .sell-name{
+	color: #fe5a3a;
+}
+.itemSP:hover .imgItemSP{
+	box-shadow: 0 7px 7px rgba(204, 204, 204, 0.5);
+}
+.imgItemSP{
+	width: 100%;
+	height: 270px;
+	overflow: hidden;
+	border: 1px solid #eeeeee;
+	border-radius: 5px;
+}
+.imgItemSP img{
+	width: 100%;
+}
+.next-page{
+	display: flex;
+}
+.next-page nav{
+	color: white;
+	margin-left: 10px;
+	background-color: #fe5a3a;
+	padding: 3px;	
+	width: 25px;
+	border-radius: 15px;	
+}
+.muaSP{
+	width: 290px;
+	margin-top: 25px;
+	background-color: white;
+	width: 100%;
+	display: flex;
+	border: 1px solid #eeeeee;
+	border-radius: 5px;
+}
+.anhSP{
+	padding: 16px;
+	background-color: white;
+	width: 300px;
+}
+.anhSP .anh{
+	width: 100%;
+	height: 340px;
+	overflow: hidden;
+}
+.anhSP .anh img{
+	height: 340px;
+}
+.muakhong{
+	width: 480px;
+	padding: 16px;
+}
+.muakhong nav{
+	padding: 7px 0; 
+	color: #8e8e93;
+}
+.box-sl{
+	margin-top: -10px;
+	margin-left: 70px;
+}
+.muakhong nav button{
+	margin-left: 15px;
+	background-color: #fe5a3a;
+	border-radius: 20px;
+	padding: 2px 10px;
+	border: none;
+	color: white;
+}
+.muangay, .themvaogio{
+	margin-top: 20px;
+	color: white;
+	border-radius: 5px
+}
+.muangay{
+	background-color: #dc1662;
+	margin-right: 5px;
+}
+.themvaogio{
+	background-color: #fe5a3a;
+}
+.GQL{
+	width: 330px;
+	background-color: #fafafa;
+	padding: 0 16px;
+}
+.GQL-box{
+	border-bottom: 1px solid #dcdcdc;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.GQL-title{
+	font-weight: bold;
+	font-size: 20px;
+}
+.GQL-box-content nav{
+	margin-top: 5px;
+}
+.cam{
+	color: #fe5a3a;
+}
+.xam{
+	color: #8e8e93;
+}
+.GQL-box i{
+	margin-right: 10px;
+}
+.bonus-t{
+	color: #8e8e93;
+	font-size: 12px;
+}
+.ntn{
+	width: 100%;
+	margin-top: 8px;
+}
+.box-m{
+	width: 100%;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: white;
+	border-radius: 5px;
+}
+.nd-sp{
+	padding: 10px;
+	height: 100px;
+	overflow: hidden;
+}
+.thurong{
+	margin-left: 500px ;
+}
+.nd-sp ul{
+	list-style: disc;
+}
+
+
+@media screen and (max-width: 768px){
+    .sort{
+      display: none;
+    }
+    .sanpham { width: 100%; }
+  }
